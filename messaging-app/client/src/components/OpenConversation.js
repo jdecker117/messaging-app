@@ -28,7 +28,7 @@ export default function OpenConversation() {
                     <div
                       ref={lastMessage ? setRef : null}
                       key={index}
-                      className={`margin my-1 d-flex flex-column ${message.fromMe ? 'align-self-end' : ''}`}
+                      className={`margin my-1 d-flex flex-column ${message.fromMe ? 'align-self-end align-items-end' : 'align-items-start'}`}
                     >
                         <div className={`rounded padding px-2 py-1 ${message.fromMe ? 'bg-primary text-white' : 'border'}`}>
                             {message.text}
